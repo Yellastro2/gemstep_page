@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Открытие Stepster</title>
+  <meta http-equiv="refresh" content="0;url=gemstep://auth">
+  <script>
+    // Запасной редирект через JS
+    window.location.href = "gemstep://auth";
+    setTimeout(function() {
+      // Если приложение не установлено — открываем fallback
+      window.location.href = "https://t.me/yellastrodev";
+    }, 3000);
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #121212;
+      color: #fff;
+      text-align: center;
+      padding-top: 100px;
+    }
+    a {
+      color: #00afff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Открытие Stepster...</h1>
+  <p>Если ничего не произошло, <a href="gemstep://auth">нажмите здесь</a>.</p>
+</body>
+</html>
